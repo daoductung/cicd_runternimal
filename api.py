@@ -8,7 +8,7 @@ FLASK_RUN_PORT = 9798
 
 @app.route('/')
 def home():
-    return "Hello ternimal!"
+    return "Hello!"
 
 
 http_server = WSGIServer((str(FLASK_RUN_HOST), int(FLASK_RUN_PORT)), app)
