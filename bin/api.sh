@@ -30,7 +30,7 @@ restart() {
     fi
     sleep 2
     echo "service $service_name is starting."
-    cd ${service_dir}; python ${service_pid} > /dev/null 2>&1 &
+    python ${service_pid} > /dev/null 2>&1 &
     sleep 3
     int_check=`ps -ef| grep 'python '${service_pid}'' | egrep -v 'grep' |  wc -l`
     if (( int_check == 0))
