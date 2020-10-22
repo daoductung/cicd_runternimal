@@ -5,7 +5,7 @@ import os
 
 
 def run(action):
-    os.system("sh ../bin/api.sh {}".format(action))
+    os.system("sh bin/api.sh {}".format(action))
 
 
 if __name__ == '__main__':
